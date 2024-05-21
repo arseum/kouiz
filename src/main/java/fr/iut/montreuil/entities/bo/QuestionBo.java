@@ -77,4 +77,17 @@ public class QuestionBo {
     public void setDifficulte(int difficulte) {
         this.difficulte = difficulte;
     }
+
+    @Override
+    public String toString() {
+        return "QuestionBo{" +
+                "id=" + id +
+                ", langue=" + langue +
+                ", libelle='" + libelle + '\'' +
+                ", reponse='" + reponse + '\'' +
+                ", reference='" + reference + '\'' +
+                ", explication='" + explication + '\'' +
+                ", difficulte=" + difficulte +
+                '}';
+    }
 }

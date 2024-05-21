@@ -67,4 +67,16 @@ public class QuestionDto {
     public void setDifficulte(DifficulteEnum difficulte) {
         this.difficulte = difficulte;
     }
+
+    @Override
+    public String toString() {
+        return "QuestionDto{" +
+                "id=" + id +
+                ", nombreApparition=" + nombreApparition +
+                ", nombreReussite=" + nombreReussite +
+                ", libelle='" + libelle + '\'' +
+                ", reponse='" + reponse + '\'' +
+                ", difficulte=" + difficulte +
+                '}';
+    }
 }

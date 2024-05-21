@@ -42,4 +42,13 @@ public class QuestionnaireDto {
     public void setQuestions(List<QuestionDto> questions) {
         this.questions = questions;
     }
+
+    @Override
+    public String toString() {
+        return "QuestionnaireDto{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", questions=" + questions +
+                '}';
+    }
 }
