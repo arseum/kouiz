@@ -1,5 +1,5 @@
 package fr.iut.montreuil.entities.tools;
 
-public enum Langue {
+public enum LangueEnum {
     FR,ANG;
 }

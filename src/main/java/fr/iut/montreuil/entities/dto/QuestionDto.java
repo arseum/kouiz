@@ -1,6 +1,6 @@
 package fr.iut.montreuil.entities.dto;
 
-import fr.iut.montreuil.entities.tools.Difficulte;
+import fr.iut.montreuil.entities.tools.DifficulteEnum;
 
 public class QuestionDto {
 
@@ -9,9 +9,9 @@ public class QuestionDto {
     private int nombreReussite;
     private String libelle;
     private String reponse;
-    private Difficulte difficulte;
+    private DifficulteEnum difficulte;
 
-    public QuestionDto(int id, int nombreApparition, int nombreReussite, String libelle, String reponse, Difficulte difficulte) {
+    public QuestionDto(int id, int nombreApparition, int nombreReussite, String libelle, String reponse, DifficulteEnum difficulte) {
         this.id = id;
         this.nombreApparition = nombreApparition;
         this.nombreReussite = nombreReussite;
@@ -60,11 +60,11 @@ public class QuestionDto {
         this.reponse = reponse;
     }
 
-    public Difficulte getDifficulte() {
+    public DifficulteEnum getDifficulte() {
         return difficulte;
     }
 
-    public void setDifficulte(Difficulte difficulte) {
+    public void setDifficulte(DifficulteEnum difficulte) {
         this.difficulte = difficulte;
     }
 }

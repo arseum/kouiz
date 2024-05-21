@@ -1,19 +1,18 @@
 package fr.iut.montreuil.entities.bo;
 
-import fr.iut.montreuil.entities.tools.Difficulte;
-import fr.iut.montreuil.entities.tools.Langue;
+import fr.iut.montreuil.entities.tools.LangueEnum;
 
 public class QuestionBo {
 
     private int id;
-    private Langue langue;
+    private LangueEnum langue;
     private String libelle;
     private String reponse;
     private String reference;
     private String explication;
     private int difficulte;
 
-    public QuestionBo(int id, Langue langue, String libelle, String reponse, String reference, String explication, int difficulte) {
+    public QuestionBo(int id, LangueEnum langue, String libelle, String reponse, String reference, String explication, int difficulte) {
         this.id = id;
         this.langue = langue;
         this.libelle = libelle;
@@ -27,7 +26,7 @@ public class QuestionBo {
         return id;
     }
 
-    public Langue getLangue() {
+    public LangueEnum getLangue() {
         return langue;
     }
 
@@ -55,7 +54,7 @@ public class QuestionBo {
         this.id = id;
     }
 
-    public void setLangue(Langue langue) {
+    public void setLangue(LangueEnum langue) {
         this.langue = langue;
     }
 

@@ -1,11 +1,11 @@
 package fr.iut.montreuil.entities.tools;
 
-public enum Difficulte {
+public enum DifficulteEnum {
     SIMPLE(1), INTERMEDIARE(1),EXPERT(2);
 
     private int value;
 
-    Difficulte(int value) {
+    DifficulteEnum(int value) {
         this.value = value;
     }
 }
