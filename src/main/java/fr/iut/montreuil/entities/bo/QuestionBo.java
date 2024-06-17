@@ -1,5 +1,7 @@
 package fr.iut.montreuil.entities.bo;
 
+import fr.iut.montreuil.entities.dto.QuestionDto;
+import fr.iut.montreuil.entities.tools.DifficulteEnum;
 import fr.iut.montreuil.entities.tools.LangueEnum;
 
 public class QuestionBo {
@@ -76,6 +78,17 @@ public class QuestionBo {
 
     public void setDifficulte(int difficulte) {
         this.difficulte = difficulte;
+    }
+
+    public QuestionDto toDto() {
+        return new QuestionDto(
+                this.id,
+                0,
+                0,
+                this.libelle,
+                this.reponse,
+                DifficulteEnum.values()[this.difficulte]
+        );
     }
 
     @Override
