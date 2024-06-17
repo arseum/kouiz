@@ -50,12 +50,11 @@ public class QuestionnaireService implements IQuestionnaireService {
                 if (questionnaireDtos.isEmpty()) {
                     List<QuestionDto> l = new ArrayList<>();
                     l.add(question.toDto());
-                    System.out.println(line[0]);
-                    int number = Integer.parseInt(line[0]);
-                    System.out.println(number);
+//                    System.out.println(line[0]);
+//                    int number = Integer.parseInt(line[0]);
+//                    System.out.println(number);
                     questionnaireDtos.add(
                             new QuestionnaireDto(
-                                    Integer.parseInt(line[0]),
                                     "",
                                     l)
                     );
@@ -70,7 +69,7 @@ public class QuestionnaireService implements IQuestionnaireService {
                     if (!est_ajouter) {
                         List<QuestionDto> l = new ArrayList<>();
                         l.add(question.toDto());
-                        questionnaireDtos.add(new QuestionnaireDto(Integer.parseInt(line[0]), "", l));
+                        questionnaireDtos.add(new QuestionnaireDto("", l));
                     }
                 }
             }

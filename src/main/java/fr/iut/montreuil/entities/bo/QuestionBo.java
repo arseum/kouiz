@@ -87,7 +87,7 @@ public class QuestionBo {
                 0,
                 this.libelle,
                 this.reponse,
-                DifficulteEnum.values()[this.difficulte]
+                DifficulteEnum.values()[this.difficulte - 1]
         );
     }
 

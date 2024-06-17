@@ -8,13 +8,15 @@ public class QuestionnaireDto {
     private int id;
     private String name;
     private List<QuestionDto> questions;
+    public static int compteur_id = 1;
 
-    public QuestionnaireDto(int id, String name) {
-        this(id, name, new ArrayList<>());
+    public QuestionnaireDto(String name) {
+        this(name, new ArrayList<>());
     }
 
-    public QuestionnaireDto(int id, String name, List<QuestionDto> questions) {
-        this.id = id;
+    public QuestionnaireDto(String name, List<QuestionDto> questions) {
+        this.id = compteur_id;
+        compteur_id++;
         this.name = name;
         this.questions = questions;
     }
